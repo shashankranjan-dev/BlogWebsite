@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Editor() {
   return (
@@ -15,7 +16,8 @@ function Editor() {
           </div>
           <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
             <article className="flex flex-col dark:bg-gray-900">
-              <a
+              <Link
+                to="/collection/hello"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Te nulla oportere reprimique his dolorum"
@@ -25,7 +27,7 @@ function Editor() {
                   className="object-cover w-full h-52 dark:bg-gray-500"
                   src="https://smartmag.theme-sphere.com/good-news/wp-content/uploads/sites/6/2021/01/Depositphotos_437955496_xl-2015-1024x683.jpg"
                 />
-              </a>
+              </Link>
               <div className="flex flex-col flex-1 p-6">
                 <a
                   rel="noopener noreferrer"
@@ -49,7 +51,8 @@ function Editor() {
               </div>
             </article>
             <article className="flex flex-col dark:bg-gray-900">
-              <a
+              <Link
+                to="/collection/hello2"
                 rel="noopener noreferrer"
                 href="#"
                 aria-label="Te nulla oportere reprimique his dolorum"
@@ -59,7 +62,7 @@ function Editor() {
                   className="object-cover w-full h-52 dark:bg-gray-500"
                   src="https://source.unsplash.com/200x200/?fashion?2"
                 />
-              </a>
+              </Link>
               <div className="flex flex-col flex-1 p-6">
                 <a
                   rel="noopener noreferrer"

@@ -1,16 +1,16 @@
 import React from "react";
-import About from "../../components/About/About";
+import Topic from "../../components/Topic/Topic";
 import Footer from "../../components/Footer/Footer";
 
-function AboutPage() {
+function TopicPage() {
   return (
     <div>
-      <About />
-      <div className="-mt-32">
+      <Topic />
+      <div className="-mt-28">
         <Footer />
       </div>
     </div>
   );
 }
 
-export default AboutPage;
+export default TopicPage;

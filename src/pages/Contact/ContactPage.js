@@ -1,11 +1,11 @@
 import React from "react";
-import About from "../../components/About/About";
+import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 
-function AboutPage() {
+function ContactPage() {
   return (
     <div>
-      <About />
+      <Contact />
       <div className="-mt-32">
         <Footer />
       </div>
@@ -13,4 +13,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default ContactPage;

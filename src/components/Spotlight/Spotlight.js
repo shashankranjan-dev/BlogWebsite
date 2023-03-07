@@ -177,33 +177,36 @@ function Spotlight() {
           </div>
         </div>
 
-        <div class="rounded flex md:shadow mt-12">
-          <img
-            src="https://images.unsplash.com/photo-1579275542618-a1dfed5f54ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60"
-            class="w-0 md:w-1/4 object-cover rounded-l"
-          />
-          <div class="px-4 py-2">
-            <h3 class="text-3xl text-gray-800 font-bold">
-              Subscribe to newsletter
-            </h3>
-            <p class="text-xl text-gray-700">
-              We sent latest news and posts once in every week, fresh from the
-              oven
+        <div
+          className="w-full dark:bg-gray-500"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxpZ2h0JTIwaW1hZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60')",
+            backgroundPosition: "center",
+            backgroundBlendMode: " multiply",
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
+            <h1 className="text-5xl antialiased font-semibold leading-none text-center dark:text-gray-100">
+              Get Our Updates
+            </h1>
+            <p className="pt-2 pb-8 text-xl antialiased text-center dark:text-gray-100">
+              Find out about events and other news
             </p>
-            <form class="mt-4 mb-10">
+            <div className="flex flex-row">
               <input
-                type="email"
-                class="rounded bg-gray-100 px-4 py-2 border focus:border-green-400"
-                placeholder="john@tech.com"
+                type="text"
+                placeholder="example@email.com"
+                className="w-3/5 p-3 rounded-l-lg sm:w-2/3"
               />
-              <button class="px-4 py-2 rounded bg-green-800 text-gray-100">
+              <button
+                type="button"
+                className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 dark:bg-violet-400 dark:text-gray-900"
+              >
                 Subscribe
-                <i class="bx bx-right-arrow-alt"></i>
               </button>
-              <p class="text-green-900 opacity-50 text-sm mt-1">
-                No spam. We promise
-              </p>
-            </form>
+            </div>
           </div>
         </div>
 
@@ -295,98 +298,6 @@ function Spotlight() {
           </div>
         </div>
       </main>
-
-      <footer class="border-t mt-12 pt-12 pb-32 px-4 lg:px-0">
-        <div class="flex flex-wrap">
-          <div class="w-full lg:w-2/5">
-            <p class="text-gray-600 hidden lg:block p-0 lg:pr-12">
-              Boisterous he on understood attachment as entreaties ye
-              devonshire. In mile an form snug were been sell. Extremely ham any
-              his departure for contained curiosity defective. Way now
-              instrument had eat diminution melancholy expression sentiments
-              stimulated.
-            </p>
-          </div>
-
-          <div class="w-full mt-6 lg:mt-0 md:w-1/2 lg:w-1/5">
-            <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
-            <ul>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Team
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  About us
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Press
-                </a>{" "}
-              </li>
-            </ul>
-          </div>
-
-          <div class="w-full mt-6 lg:mt-0 md:w-1/2 lg:w-1/5">
-            <h6 class="font-semibold text-gray-700 mb-4">Content</h6>
-            <ul>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Blog
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Privacy Policy
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Terms & Conditions
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Documentation
-                </a>{" "}
-              </li>
-            </ul>
-          </div>
-
-          <div class="w-full mt-6 lg:mt-0 md:w-1/2 lg:w-1/5">
-            <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
-            <ul>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Team
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  About us
-                </a>{" "}
-              </li>
-              <li>
-                {" "}
-                <a href="" class="block text-gray-600 py-2">
-                  Press
-                </a>{" "}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
